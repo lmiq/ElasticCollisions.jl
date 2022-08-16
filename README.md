@@ -3,7 +3,7 @@ example of ellastic collision simulations using Agents and CellListMap
 
 ## Without CellListMap.jl
 
-```julia-repl
+```julia
 julia> model = ball_model(nagents=2000)
 AgentBasedModel with 2000 agents of type Ball
  space: periodic continuous space with (2.0, 2.0) extent and spacing=0.02
@@ -35,7 +35,7 @@ AgentBasedModel with 32000 agents of type Ball
 
 ## With CellListMap.jl
 
-```julia-repl
+```julia
 julia> @time model = ball_model(nagents=2000)
   0.005228 seconds (40.12 k allocations: 8.026 MiB)
 AgentBasedModel with 2000 agents of type Ball
