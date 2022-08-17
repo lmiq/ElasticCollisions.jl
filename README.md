@@ -1,10 +1,10 @@
-# EllasticCollisions.jl
-example of ellastic collision simulations using Agents and CellListMap
+# ElasticCollisions.jl
+example of Elastic collision simulations using Agents and CellListMap
 
 ## Without CellListMap.jl
 
 ```julia
-julia> include("./ellastic.jl")
+julia> include("./Elastic.jl")
 
 # run once to compile, and:
 
@@ -23,7 +23,7 @@ julia> @time only_steps(model = ball_model(nagents=128000));
 Benchmarks do not include compilation time.
 
 ```julia
-julia> include("./ellastic_celllistmap.jl")
+julia> include("./Elastic_celllistmap.jl")
 
 # run once to compile... and:
 

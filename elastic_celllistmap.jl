@@ -63,7 +63,7 @@ end
 function run0(; nagents=500)
     model2 = ball_model(; nagents=nagents)
     abmvideo(
-        "celllistmap_ellastic.mp4",
+        "celllistmap_Elastic.mp4",
         model2,
         agent_step!,
         model_step!;
