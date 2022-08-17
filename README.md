@@ -77,4 +77,17 @@ AgentBasedModel with 128000 agents of type Ball
  space: periodic continuous space with (16.0, 16.0) extent and spacing=0.02
  scheduler: fastest
  properties: dt, system
+
+julia> model = ball_model(nagents=128000)
+AgentBasedModel with 128000 agents of type Ball
+ space: periodic continuous space with (16.0, 16.0) extent and spacing=0.02
+ scheduler: fastest
+ properties: dt
+
+julia> @time only_steps(model=model)
+402.776787 seconds (212.93 M allocations: 315.183 GiB, 78.49% gc time)
+AgentBasedModel with 128000 agents of type Ball
+ space: periodic continuous space with (16.0, 16.0) extent and spacing=0.02
+ scheduler: fastest
+ properties: dt
 ```
