@@ -6,7 +6,7 @@ example of Elastic collision simulations using Agents and CellListMap
 ```julia
 julia> include("./Elastic.jl")
 
-# run once to compile, and:
+julia> only_steps(model = ball_model(nagents=500)); # compile
 
 julia> @time only_steps(model = ball_model(nagents=2000));
   0.374590 seconds (3.32 M allocations: 279.059 MiB, 25.02% gc time)
@@ -25,7 +25,7 @@ Benchmarks do not include compilation time.
 ```julia
 julia> include("./Elastic_celllistmap.jl")
 
-# run once to compile... and:
+julia> only_steps(model = ball_model(nagents=500)); # compile
 
 julia> @time only_steps(model = ball_model(nagents=2000));
   0.068423 seconds (776.01 k allocations: 50.143 MiB)
